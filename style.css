@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+
+}
+
+
+body.night{
+    background-color: #301934 !important;
+    color: white !important;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+    & p{
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        font-size: 18px;
+
+    }
+
+
+
+    .dark-mode{
+        cursor: pointer;
+    }
+
+    & .fa-solid.fa-cloud-sun{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+
+    & .heading-color{
+        color: #ff0000;
+        padding: 12px;
+        border: 1px solid transparent;
+        border-radius: 9px;
+        margin-bottom: 100px;
+        
+    }
+
+    button{
+        all: unset;
+        /* background-color: #FBA518; */
+        background-color: #DF6D14;
+        border-left: 5px solid #FF2929;
+        padding: 10px;
+        border-radius: 5px 10px 5px 10px;
+        font-size: 17px;
+        color: #fff;
+        transition: all .6s;
+        margin-top: 50px;
+    }
+     & button:hover{
+        scale: .9;
+
+     }
+
+}
+
+& footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+
+    & span{
+        padding-left: 10px;
+        color: #ff6f00;
+    }
+}
+
+
+
+
+
+ .toast{
+    position: absolute;
+    transform: translateX(-200%);
+    left: 0;
+    top: 10px;
+    background-color: #ffa600;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0px 10px rgba(134, 134, 134, 0.637);
+    border-radius: 10px;
+    padding: 15px;
+    border-left: 4px solid #ff6f00;
+    animation: mymove 3s 1;
+    transition: opacity 0.5s ease-out; /* انتقال سلسٍ عند الاختفاء */
+} 
+
+
+
+@keyframes mymove {
+
+    0% {transform: translate(0 , 0);}
+
+    20% {transform: translate(10px , 0);}
+
+    40% {transform: translate(10px , 0px);}
+
+    60% {transform: translate(10px , 0px);}
+
+    100% {transform: translate(0 , 0);}
+ 
+}
